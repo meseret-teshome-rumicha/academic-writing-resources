@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic writing resources for university students in science and technology, including sentence skills, paragraph writing, essay writing, and research writing.">
+  <title>Academic Writing Resources | Basic Writing Skills</title>
+  <style>
+    :root {
+      --navy: #153451;
+      --blue: #246b9e;
+      --light: #f2f6fa;
+      --text: #263445;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--white);
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 22px 7%;
+    }
+
+    .brand {
+      font-size: 1.35rem;
+      font-weight: bold;
+    }
+
+    nav {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    .hero {
+      background: var(--light);
+      padding: 70px 7%;
+    }
+
+    .hero h1 {
+      max-width: 850px;
+      color: var(--navy);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      line-height: 1.2;
+      margin: 0 0 20px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      font-size: 1.15rem;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 12px 10px 0 0;
+      padding: 12px 20px;
+      border-radius: 5px;
+      background: var(--blue);
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button.secondary {
+      background: var(--white);
+      color: var(--navy);
+      border: 1px solid var(--navy);
+    }
+
+    main { padding: 45px 7%; }
+
+    h2 { color: var(--navy); }
+
+    .resources {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+      margin-top: 25px;
+    }
+
+    .resource {
+      padding: 24px;
+      border: 1px solid #dce4ec;
+      border-radius: 8px;
+      background: var(--white);
+    }
+
+    .resource h3 { color: var(--blue); }
+
+    .resource p { margin-bottom: 0; }
+
+    .about {
+      background: var(--light);
+      padding: 35px;
+      border-radius: 8px;
+      margin-top: 45px;
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 25px 7%;
+    }
+
+    footer a { color: var(--white); }
+
+    a:focus-visible {
+      outline: 3px solid #f2bd55;
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 600px) {
+      .hero { padding-top: 45px; padding-bottom: 45px; }
+      .about { padding: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Academic Writing Resources</div>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#resources">Learning Resources</a>
+      <a href="#about">About This Website</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Develop Your Academic Writing Skills</h1>
+    <p>
+      Welcome to a learning space designed to help university students
+      strengthen their English writing skills. Explore practical guidance
+      on sentences, paragraphs, essays, and research writing, with examples
+      relevant to science and technology.
+    </p>
+    <a class="button" href="#resources">Explore Learning Resources</a>
+    <a class="button secondary"
+       href="https://meseret-teshome-rumicha.github.io/">
+      Visit Academic Profile
+    </a>
+  </section>
+
+  <main>
+    <section id="resources">
+      <h2>Learning Resources</h2>
+      <p>
+        Build your writing skills step by step, from constructing correct
+        sentences to preparing extended academic texts.
+      </p>
+
+      <div class="resources">
+        <article class="resource">
+          <h3>1. Understanding Sentences</h3>
+          <p>
+            Learn sentence structure, the essential elements of a sentence,
+            and the mechanics of correct writing.
+          </p>
+        </article>
+
+        <article class="resource">
+          <h3>2. Combining Sentences</h3>
+          <p>
+            Practise joining ideas using coordination, subordination,
+            and other sentence-combining techniques.
+          </p>
+        </article>
+
+        <article class="resource">
+          <h3>3. Common Sentence Errors</h3>
+          <p>
+            Recognize and correct fragments, run-on sentences, and
+            common grammatical and structural problems.
+          </p>
+        </article>
+
+        <article class="resource">
+          <h3>4. Paragraph Writing</h3>
+          <p>
+            Develop focused paragraphs with clear topic sentences,
+            supporting details, unity, and coherence.
+          </p>
+        </article>
+
+        <article class="resource">
+          <h3>5. Essay Writing</h3>
+          <p>
+            Organize introductions, body paragraphs, and conclusions
+            into coherent academic essays.
+          </p>
+        </article>
+
+        <article class="resource">
+          <h3>6. Research and Technical Writing</h3>
+          <p>
+            Explore principles for research reports, proposals,
+            laboratory reports, and technical documentation.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About This Website</h2>
+      <p>
+        This website provides educational resources for university students,
+        particularly those studying science and technology. Its aim is to
+        support independent learning, effective communication, and the
+        development of academic writing competence.
+      </p>
+      <p>
+        The materials are intended to complement classroom learning and
+        encourage students to practise, revise, and improve their writing.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Academic Profile and Contact</h2>
+      <p>
+        Learn more about the author, academic interests, and publications
+        through the main academic profile.
+      </p>
+      <p>
+        <a href="https://meseret-teshome-rumicha.github.io/">
+          Visit the academic profile website
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Academic Writing Resources</p>
+    <p>Supporting university students in science and technology.</p>
+    <p>
+      <a href="https://meseret-teshome-rumicha.github.io/">
+        Main Academic Website
+      </a>
+    </p>
+  </footer>
+</body>
+</html>
