@@ -1,285 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Academic writing resources for university students in science and technology, including sentence skills, paragraph writing, essay writing, and research writing.">
-  <title>Academic Writing Resources | Basic Writing Skills</title>
-  <style>
-    :root {
-      --navy: #153451;
-      --blue: #246b9e;
-      --light: #f2f6fa;
-      --text: #263445;
-      --white: #ffffff;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.7;
-      color: var(--text);
-      background: var(--white);
-    }
-
-    header {
-      background: var(--navy);
-      color: var(--white);
-      padding: 22px 7%;
-    }
-
-    .brand {
-      font-size: 1.35rem;
-      font-weight: bold;
-    }
-
-    nav {
-      margin-top: 12px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-
-    nav a {
-      color: var(--white);
-      text-decoration: none;
-    }
-
-    nav a:hover { text-decoration: underline; }
-
-    .hero {
-      background: var(--light);
-      padding: 70px 7%;
-    }
-
-    .hero h1 {
-      max-width: 850px;
-      color: var(--navy);
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      line-height: 1.2;
-      margin: 0 0 20px;
-    }
-
-    .hero p {
-      max-width: 760px;
-      font-size: 1.15rem;
-    }
-
-    .button {
-      display: inline-block;
-      margin: 12px 10px 0 0;
-      padding: 12px 20px;
-      border-radius: 5px;
-      background: var(--blue);
-      color: var(--white);
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .button.secondary {
-      background: var(--white);
-      color: var(--navy);
-      border: 1px solid var(--navy);
-    }
-
-    main { padding: 45px 7%; }
-
-    h2 { color: var(--navy); }
-
-    .resources {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 22px;
-      margin-top: 25px;
-    }
-
-    .resource {
-      padding: 24px;
-      border: 1px solid #dce4ec;
-      border-radius: 8px;
-      background: var(--white);
-    }
-
-    .resource h3 { color: var(--blue); }
-
-    .resource p { margin-bottom: 0; }
-
-    .about {
-      background: var(--light);
-      padding: 35px;
-      border-radius: 8px;
-      margin-top: 45px;
-    }
-
-    footer {
-      background: var(--navy);
-      color: var(--white);
-      text-align: center;
-      padding: 25px 7%;
-    }
-
-    footer a { color: var(--white); }
-
-    a:focus-visible {
-      outline: 3px solid #f2bd55;
-      outline-offset: 3px;
-    }
-
-    @media (max-width: 600px) {
-      .hero { padding-top: 45px; padding-bottom: 45px; }
-      .about { padding: 22px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Basic Writing Skills resources for understanding sentences.">
+<title>Understanding Sentences | Basic Writing Skills</title>
+<style>
+:root{--ink:#19354b;--muted:#526b7d;--blue:#176b87;--dark:#10536b;--pale:#eaf6fa;--line:#d6e5ec;--page:#f5f9fb}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--page);font:16px/1.65 Arial,Helvetica,sans-serif}
+.wrap{width:min(1000px,calc(100% - 36px));margin:auto}header{padding:36px 0;background:linear-gradient(135deg,#eaf8fc,#cfeaf4);border-bottom:1px solid var(--line)}
+.breadcrumb{margin:0 0 12px;font-size:.92rem}.breadcrumb a{color:var(--dark)}.eyebrow{margin:0 0 6px;color:var(--dark);font-size:.8rem;font-weight:bold;letter-spacing:.1em;text-transform:uppercase}
+h1{margin:0;font-size:clamp(2rem,5vw,3rem);line-height:1.2}.lead{max-width:760px;margin:14px 0 0;color:#294d66;font-size:1.08rem}
+main{padding:30px 0 48px}section{margin-bottom:26px}h2{margin:0 0 12px;font-size:1.5rem}
+.panel,.resource{background:white;border:1px solid var(--line);border-radius:15px;box-shadow:0 4px 15px #19354b0a}.panel{padding:22px 24px}
+.objectives{margin:8px 0 0;padding-left:22px}.resource-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.resource{display:flex;flex-direction:column;align-items:flex-start;padding:22px}.label{display:inline-block;margin-bottom:10px;padding:4px 10px;border-radius:999px;background:var(--pale);color:var(--dark);font-size:.78rem;font-weight:bold}
+h3{margin:0 0 9px;font-size:1.18rem;line-height:1.4}.resource p{margin:0 0 18px;color:var(--muted)}
+.button{display:inline-block;margin-top:auto;padding:10px 14px;border-radius:9px;background:var(--blue);color:white;text-decoration:none;font-weight:bold}.button:hover,.button:focus{background:var(--dark);text-decoration:underline}
+.tip{border-left:4px solid var(--blue);padding:12px 16px;background:#eef8fb;border-radius:0 9px 9px 0}footer{padding:20px 0;border-top:1px solid var(--line);color:var(--muted);text-align:center;font-size:.9rem}
+a:focus-visible{outline:3px solid #e39b32;outline-offset:3px}@media(max-width:680px){.resource-grid{grid-template-columns:1fr}header{padding:28px 0}.panel,.resource{padding:18px}}
+</style>
 </head>
 <body>
-  <header>
-    <div class="brand">Academic Writing Resources</div>
-    <nav aria-label="Main navigation">
-      <a href="#home">Home</a>
-      <a href="#resources">Learning Resources</a>
-      <a href="#about">About This Website</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section class="hero" id="home">
-    <h1>Develop Your Academic Writing Skills</h1>
-    <p>
-      Welcome to a learning space designed to help university students
-      strengthen their English writing skills. Explore practical guidance
-      on sentences, paragraphs, essays, and research writing, with examples
-      relevant to science and technology.
-    </p>
-    <a class="button" href="#resources">Explore Learning Resources</a>
-    <a class="button secondary"
-       href="https://meseret-teshome-rumicha.github.io/">
-      Visit Academic Profile
-    </a>
-  </section>
-
-  <main>
-    <section id="resources">
-      <h2>Learning Resources</h2>
-      <p>
-        Build your writing skills step by step, from constructing correct
-        sentences to preparing extended academic texts.
-      </p>
-
-      
-<div class="resources">
-  <article class="resource">
-    <h3>1. Understanding Sentences</h3>
-    <p>
-      Learn sentence structure, the essential elements of a sentence,
-      and the mechanics of correct writing.
-    </p>
-
-    <h4>Learning Resources</h4>
-    <ul>
-      <li>
-        <a href="sentence-writing-puzzles.html">
-          Basic Writing Skills: Sentence Mastery Worksheet
-        </a>
-      </li>
-      <li>
-        <a href="sentence-writing-puzzles.html">
-          EFL Advanced Sentence Writing Puzzles
-        </a>
-      </li>
-    </ul>
-  </article>
-</div>
-       </a>
-      </li>
-      <li> 
-        <a href="understanding-sentences/index.html">
-        STEM Sentence Puzzles and Subject–Predicate Practice
-      </a>
-      </li>
-    </ul>
-  </article>
-</div>
-        <article class="resource">
-          <h3>2. Combining Sentences</h3>
-          <p>
-            Practise joining ideas using coordination, subordination,
-            and other sentence-combining techniques.
-          </p>
-        </article>
-
-        <article class="resource">
-          <h3>3. Common Sentence Errors</h3>
-          <p>
-            Recognize and correct fragments, run-on sentences, and
-            common grammatical and structural problems.
-          </p>
-        </article>
-
-        <article class="resource">
-          <h3>4. Paragraph Writing</h3>
-          <p>
-            Develop focused paragraphs with clear topic sentences,
-            supporting details, unity, and coherence.
-          </p>
-        </article>
-
-        <article class="resource">
-          <h3>5. Essay Writing</h3>
-          <p>
-            Organize introductions, body paragraphs, and conclusions
-            into coherent academic essays.
-          </p>
-        </article>
-
-        <article class="resource">
-          <h3>6. Research and Technical Writing</h3>
-          <p>
-            Explore principles for research reports, proposals,
-            laboratory reports, and technical documentation.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <h2>About This Website</h2>
-      <p>
-        This website provides educational resources for university students,
-        particularly those studying science and technology. Its aim is to
-        support independent learning, effective communication, and the
-        development of academic writing competence.
-      </p>
-      <p>
-        The materials are intended to complement classroom learning and
-        encourage students to practise, revise, and improve their writing.
-      </p>
-    </section>
-
-    <section id="contact">
-      <h2>Academic Profile and Contact</h2>
-      <p>
-        Learn more about the author, academic interests, and publications
-        through the main academic profile.
-      </p>
-      <p>
-        <a href="https://meseret-teshome-rumicha.github.io/">
-          Visit the academic profile website
-        </a>
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <p>Academic Writing Resources</p>
-    <p>Supporting university students in science and technology.</p>
-    <p>
-      <a href="https://meseret-teshome-rumicha.github.io/">
-        Main Academic Website
-      </a>
-    </p>
-  </footer>
-</body>
-</html>
+<header><div class="wrap">
+<p class="breadcrumb"><a href="../index.html">Basic Writing Skills</a> / Resources / Understanding Sentences</p>
+<p class="eyebrow">Basic Writing Skills · Learning Resources</p>
+<h1>Understanding Sentences</h1>
+<p class="lead">Build a strong foundation in sentence writing. These resources help you identify sentence components and explore sentence structures in general grammar and scientific and technical English.</p>
+</div></header>
+<main class="wrap">
+<section class="panel" aria-labelledby="goals"><h2 id="goals">What you will practise</h2>
+<ul class="objectives">
+<li>Identifying complete subjects and complete predicates.</li>
+<li>Recognising the simple subject and main verb.</li>
+<li>Combining technical ideas using relative clauses and correct punctuation.</li>
+<li>Analysing complex and compound-complex sentence structures.</li>
+</ul></section>
+<section aria-labelledby="resources"><h2 id="resources">Learning resources</h2>
+<div class="resource-grid">
+<article class="resource"><span class="label">Grammar practice</span>
+<h3>Subject and Predicate Practice Worksheet</h3>
+<p>Practise identifying the complete subject and predicate in eight questions. The worksheet includes a solutions table, explanations, and a teacher guide for analysing questions.</p>
+<a class="button" href="Subject-and-Predicate-Practice-Worksheet.pdf" target="_blank" rel="noopener">Open worksheet (PDF)</a></article>
+<article class="resource"><span class="label">Scientific and technical writing</span>
+<h3>STEM Sentence Writing Puzzles</h3>
+<p>Explore four activities on subject–predicate division, relative clauses, scientific sentence functions, and technical sentence architecture. An instructor answer key and technical notes are included.</p>
+<a class="button" href="STEM-Sentence-Writing-Puzzles.pdf" target="_blank" rel="noopener">Open STEM puzzles (PDF)</a></article>
+</div></section>
+<section class="panel" aria-labelledby="tip"><h2 id="tip">Study tip</h2>
+<p class="tip">Try each activity before checking its answer key. Then review the explanations and correct your answers. Pay attention to how the subject and predicate work together to form a complete sentence.</p></section>
+</main>
+<footer><div class="wrap">Basic Writing Skills · Understanding Sentences</div></footer>
+</body></html>
